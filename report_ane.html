@@ -1,0 +1,157 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+	<title>Vis & Society Assignment 3</title>
+	<link rel="stylesheet" href="https://vis-society.github.io/assignments/report.css" />
+	<style>
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+
+<body>
+	<header>
+		<h1>
+			<small>Assignment 3</small>
+			Visualization Design
+		</h1>
+
+		<p>
+			<strong>Ane Zuniga</strong> — <em>anezu@mit.edu</em>
+		</p>
+	</header>
+
+	<main>
+		<section>
+			<h2>Phase One: Sketching Visualizations</h2>
+			<p>
+				The question I aim to address through my sketches is: How has the population distribution in the United States evolved from 1900 to 2000?
+			</p>
+
+      <figure>
+				<img src="plots/Plot_1.jpg" alt="" />
+				<figcaption>
+					Population pyramids for 1900 and 2000.
+				</figcaption>
+			</figure>
+
+			<p>
+				Design Rationale for Sketch 1:
+			</p>
+
+			<ul>
+				<li>I have two independent plots for each year positioned side by side, each illustrating the population trends of their respective year.</li>
+				<li>I present the population data separated by genders. This approach adds interest as, while both genders generally exhibit similar population metrics, there's a notable divergence in later years, particularly with the female population surpassing the male population.</li>
+				<li>I opted for green and purple as colors to represent the genders. This choice was deliberate to avoid the traditional blue and pink color scheme typically associated with gender.</li>
+				<li>Some aspects of the sketch that I find less satisfactory:</li>
+				<ul>
+					<li>I utilized different scales for the years 1900 and 2000, making direct comparison less intuitive. It requires viewers to carefully inspect the axis information to make accurate comparisons.</li>
+					<li>I plotted age increasing as going down in the plot, which I later realized to be counterintuitive.</li>
+				</ul>
+			</ul>
+
+      <figure>
+				<img src="plots/Plot_2.jpg" alt="" />
+				<figcaption>
+          Population bar chart comparing 1900 and 2000.
+				</figcaption>
+			</figure>
+
+			<p>
+				Design Rationale for Sketch 2:
+			</p>
+
+			<ul>
+				<li>I opted to create a bar chart featuring both years side by side for each age group, as this format allows for a clearer comparison of absolute population values.</li>
+				<li>The bars are divided into two sections, one representing females and the other males.</li>
+				<li>Aspects of the sketch that I find less satisfactory:</li>
+				<ul>
+					<li>While it's relatively straightforward to track the population trend for 2000, doing so for 1900 requires closer scrutiny.</li>
+					<li>By placing the female bars atop the male bars (or vice versa), it inadvertently implies a sense of superiority that I don't intend to convey. Additionally, it can be challenging to discern which section is larger. I believe this bar chart would be clearer without distinguishing between genders.</li>
+				</ul>
+			</ul>
+
+      <figure>
+				<img src="plots/Plot_3.jpg" alt="" />
+				<figcaption>
+          Population pyramid comparing 1900 and 2000.
+				</figcaption>
+			</figure>
+
+			<p>
+				Design Rationale for Sketch 3:
+			</p>
+
+			
+		<ul>
+			<li>I find the pyramid format particularly effective in showcasing the population distribution for each gender, which influenced my decision to utilize this approach.</li>
+			<li>To ensure a straightforward comparison, I overlaid both the 1900 and 2000 data on top of each other.</li>
+			<li>To differentiate between the two years, I employed the same color with varying intensities.</li>
+		</ul>
+
+      <h3>Reflection</h3>
+
+      <p>
+        Upon reviewing all three sketches, I find that each has its strengths and weaknesses in effectively conveying the population distribution data for the years 1900 and 2000.
+
+		The bar chart, while providing a clear comparison of absolute population values for both genders across age groups, presents some challenges. It is difficult to discern trends for the year 1900 without careful inspection, and the gender distinction can be visually confusing. In hindsight, I believe removing the gender distinction would enhance clarity.
+
+		Conversely, the population pyramid format proves to be quite effective. It offers a straightforward visualization of the population distribution for each gender, making it easy to compare across the two years. However, ensuring that both years are presented in the same scale is crucial for accurate comparison.
+      </p>
+
+		</section>
+
+		<section>
+			<h2>Phase Two: Final Design</h2>
+
+			<figure>
+				<img src="plots/final_plot.png" alt="" />
+				<figcaption>
+					Population pyramid comparing 1900 and 2000.
+				</figcaption>
+			</figure>
+		</section>
+
+		<section>
+			<h2>Design Process & Design Decisions</h2>
+
+			<p>
+				My design process for creating the population pyramid involved several considerations and decisions to ensure clarity and effectiveness in conveying the population distribution data for the years 1900 and 2000.
+			<p>
+			<p>
+				Firstly, I opted for the population pyramid format after observing its effectiveness in providing a clear visualization of population distribution during the initial phase of my project. This format allowed for easy comparison between genders and across the two years.
+			<p>	
+			<p>	
+				Color selection was another important decision. I chose brown and purple from the available color palette in matplotlib, aiming for colors that were distinct yet not overly attention-grabbing. Originally, I planned to use green for males, but upon testing, I found it too bright and distracting, prompting the switch to a more neutral brown.
+			<p>	
+			<p>		
+				In terms of axis labeling, I decided to display population in thousands rather than absolute values, as I believed the trends were more significant than precise numbers. However, I included a few values (5000 and 10000) to provide some orientation for readers. For the age groups on the y-axis, I chose a format like "10 to 14" as it seemed more intuitive to the average reader than using hyphens ("10-14").
+			<p>	
+			<p>		
+				The title "US POPULATION (1900 vs 2000)" in capital letters with years in parentheses was chosen to clearly convey the content of the plot. Additionally, I bounded the plot with a rectangle for added clarity and structure.
+			<p>	
+			<p>		
+				The decision to arrange age groups with increasing age along the y-axis was based on intuitiveness and ease of interpretation. Lastly, I included a legend in the top right corner to indicate the meaning of each color. Initially, I considered labeling the genders directly on the plot, but I found it cluttered, so I opted for a legend instead.
+      		</p>
+
+
+      <h3>Reflection</h3>
+
+      <p>
+        In reflection, the design process for creating the final plot was greatly influenced by the insights gained during phase 1. Without taking the time to explore alternative visualization options in sketch #1, I may have prematurely settled on a less effective design. Instead, considering various approaches allowed me to ultimately choose the population pyramid format, which proved to be highly effective in conveying the population distribution data for the years 1900 and 2000.
+	  <p>
+	  <p>
+		In my opinion, the final plot effectively addresses the original question without requiring additional explanation. Its clear presentation of population trends across age groups and genders accomplishes the goal succinctly.
+	  <p>
+	  <p>
+		During the design process, I deliberated on whether gender distinction was necessary. While my primary focus was on illustrating overall population trends, I ultimately decided to retain gender separation. This choice allowed for the visualization of notable insights, such as the increased longevity of women in later years, which adds depth to the analysis.
+	  <p>
+	  <p>
+		Additionally, it's worth considering how future advancements in data collection regarding gender identities may impact population pyramid visualizations. While this dataset only represents binary gender data, the inclusion of more diverse gender identities in future datasets could lead to more nuanced and inclusive representations in population pyramids. It's an intriguing prospect to ponder as we continue to evolve in our understanding and representation of demographic data.
+      </p>
+		</section>
+	</main>
+</body>
+</html>
